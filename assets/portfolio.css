@@ -1,0 +1,98 @@
+/* description for mobile should be always visible */
+body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+h2, h3 {
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+.intro {
+    width: 100%;
+    height: 100vh;
+    
+    justify-content: center;
+    background-color: yellowgreen;
+}
+
+.about {
+    min-height: 100vh;
+    background-color: aqua;
+    padding: 1rem;
+    font-size: 18px;
+    font-family: "Times new Roman", Georgia, serif;
+    text-align: justify;
+}
+
+.vertical-align {
+    display: flex;
+    align-items: center;
+}
+/* Projects */
+.projects {
+    min-height: 100vh;
+}
+.projects-title {
+    text-align: center;
+}
+.project {
+    padding: 1rem;
+}
+.project .description, .project h3 {
+    position: absolute;    
+    width: 100%;
+    left: 0;
+    text-align: center;
+    color: white;
+    z-index: 1; /* Filtering image makes text with "z-index: auto" disappear; */
+    visibility: hidden;
+    padding: 0 1rem;
+}
+.project .description {
+    bottom: 3rem;
+    font-size: 2rem;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+.project h3 {
+    top: 1rem;
+}
+.project img {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);    
+}
+.project:hover img {
+    filter: brightness(40%);
+}
+.project:hover span, .project:hover h3{
+    visibility: visible;
+}
+/* Contact */
+.contact {
+    background-color: #eee
+}
+.contact-form {
+    padding: 1rem;
+}
+/* Footer */
+.social {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #aaa;
+}
+.social a {
+    padding: 1rem;
+    color: #555;
+}
+.social a:hover {
+    color: black;
+}
+
+/* Media Queries */
+@media (max-width: 767px) {
+    .project .description, .project h3 {
+        visibility: visible;
+    }
+    .project img {
+        filter: brightness(40%);
+    }
+}
