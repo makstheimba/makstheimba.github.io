@@ -10,6 +10,9 @@ h1, h2, h3 {
 a:hover {
     text-decoration: none;
 }
+p {
+    text-indent: 25px;
+}
 .vertical-align {
     display: flex;
     align-items: center;
