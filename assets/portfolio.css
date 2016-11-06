@@ -8,10 +8,13 @@ h1, h2, h3 {
     
 }
 a:hover {
-    text-decoration: none;
+    text-decoration: none;    
 }
 p {
     text-indent: 25px;
+}
+.nav li:hover {
+    background-color: #eee;
 }
 .vertical-align {
     display: flex;
@@ -46,6 +49,7 @@ p {
 .skills div {
     margin-top: 1rem;
 }
+
 /* Projects */
 
 .projects {
@@ -57,6 +61,7 @@ p {
 }
 .project {
     padding: 1rem;
+    cursor: pointer;
 }
 .project .description, .project h3 {
     position: absolute;    
@@ -71,7 +76,6 @@ p {
 .project .description {
     bottom: 3rem;
     font-size: 2rem;
-    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
 }
 .project h3 {
     top: 1rem;
@@ -89,7 +93,6 @@ p {
 /* Contact */
 
 .contact {
-    background-color: #eee;
     padding-bottom: 2rem;
     min-height: 100vh;
     text-align: center;
