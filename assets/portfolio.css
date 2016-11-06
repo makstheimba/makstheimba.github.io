@@ -13,6 +13,9 @@ a:hover {
 p {
     text-indent: 25px;
 }
+.nav li:hover {
+    background-color: #eee;
+}
 .vertical-align {
     display: flex;
     align-items: center;
