@@ -2,7 +2,7 @@
 <html>
     <head>
         <title>Maksim Kulichenko</title>
-        <script   src="http://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
+        <script   src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
         <script src="https://use.fontawesome.com/ca3b5d207e.js"></script>
         <link rel = "stylesheet" href = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <link rel = "stylesheet" href="assets/portfolio.css">
@@ -21,14 +21,14 @@
                         <span class = "icon-bar"></span>
                         <span class = "icon-bar"></span>
                     </button>
-                    <a class = "navbar-brand" href = "#">Maksim Kulichenko</a>
+                    <a class = "navbar-brand" href = "#">Максим Куличенко</a>
                 </div>
                 <div class = "collapse navbar-collapse" id = "example-navbar-collapse">
                     <ul class = "nav navbar-nav navbar-right">
-                        <li class = "active"><a href = "#home">Home</a></li>
-                        <li><a href = "#about">About</a></li>
-                        <li><a href = "#portfolio">Portfolio</a></li>
-                        <li><a href = "#contact">Contact</a></li>
+                        <li class = "active"><a href = "#home">В начало</a></li>
+                        <li><a href = "#about">Обо мне</a></li>
+                        <li><a href = "#portfolio">Проекты</a></li>
+                        <li><a href = "#contact">Контакты</a></li>
                     </ul>
                 </div>
             </div>
@@ -36,8 +36,11 @@
         <!-- End of navbar -->
         
         <a name = "home"></a>
-        <div class = "intro vertical-align">
-            <h1>Hello</h1>
+        <div class = "intro vertical-align ">
+            <div><!-- this div is here so h2 goes on a new line. Otherwise it's displayed inline with h1-->
+                <h1>Куличенко Максим</h1>
+                <h2>Начинающий web&#8209;разработчик</h2>
+            </div>
         </div>
         
         <!-- About section -->
@@ -46,9 +49,33 @@
             <div class = "container">
                 <div class = "row">
                     <div class = "col-sm-12 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
-                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        <h2>Обо мне</h2>
+                        <p>Я заканчиваю ДГТУ по специальности "Компьютерная безопасность". Мне нравится программирование и все, что связано с компьютерами. Много писал на Python - проекты для института в ходе обучения, различные "челленджи" на сайтах <a href = "https://py.checkio.org/user/makstheimba/">Checkio</a> и <a href = "https://www.codewars.com/users/makstheimba">CodeWars</a>. Хорошо знаю английский язык, без проблем могу читать и говорить на нем. Несколько месяцев назад решил посвятить себя изучению веб-разработки. В ходе самообучения наткнулся на сайт <a href = "https://www.freecodecamp.com/makstheimba">FreeCodeCamp</a> и результатом моих интенсивных занятий на нем стали проекты, представленное ниже. Так же знаком с системой контроля версий <a href = "https://github.com/makstheimba">Git</a>.</p>                        
+                        <h2>Навыки</h2>
+                        <div class = "row skills">
+                            <div class = "col-xs-4 col-sm-2">
+                                <img class = "img-responsive" src = "assets/images/js.png" />
+                            </div>
+                            <div class = "col-xs-4 col-sm-2">
+                                <img class = "img-responsive" src = "assets/images/html5.png" />
+                            </div>
+                            <div class = "col-xs-4 col-sm-2">
+                                <img class = "img-responsive" src = "assets/images/css3.png" />
+                            </div>
+                            
+                            <div class = "col-xs-4 col-sm-2">
+                                <img class = "img-responsive" src = "assets/images/python.jpg" />
+                            </div>                            
+                            <div class = "col-xs-4 col-sm-2">
+                                <img class = "img-responsive" src = "assets/images/jquery.png" />
+                            </div>
+                            <div class = "col-xs-4 col-sm-2">
+                                <img class = "img-responsive" src = "assets/images/bootstrap.png" />
+                            </div>
+                        </div>
+                        
                     </div>
+                    
                 </div>
             </div>           
         </div>
@@ -59,25 +86,25 @@
             <div class = "container">
                 <div class = "row projects-title">
                     <div class = "col-xs-12">
-                        <h2>My Projects</h2>
+                        <h2>Мои проекты</h2>
                     </div>
                 </div>
                 <div class = "row">                    
                     <div class = "col-xs-12 col-sm-6 col-md-4 project">
-                        <a href = "http://codepen.io/makstheimba/full/XjxxZV/">                        
+                        <a href = "http://codepen.io/makstheimba/full/XjxxZV/" target="_blank">                        
                             <img class = "img-responsive" src="assets/images/pomodoro.jpg" />
                             <h3>Pomodoro Clock</h3>
                             <span class = "description">
-                                Clock with work/break periods<br/>Jquery, Jquery UI
+                                Часы с возможностью выставить время работы и отдыха<br/>Jquery, Jquery UI
                             </span>
                         </a>
                     </div>
                     <div class = "col-xs-12 col-sm-6 col-md-4 project">
-                        <a href = "http://codepen.io/makstheimba/full/PGgbVa/">   
+                        <a href = "http://codepen.io/makstheimba/full/PGgbVa/" target="_blank">   
                             <img class = "img-responsive" src="assets/images/twitch.jpg" />
                             <h3>View Twitch</h3>
                             <span class = "description">
-                                See what your favorite streamers are doing<br/>Jquery, Twitch API, CSS
+                                Поиск стримеров и отображение их статуса<br/>Jquery, Twitch API, CSS
                             </span>
                         </a>                        
                     </div>
@@ -85,11 +112,11 @@
                     <div class="clearfix visible-sm-block"></div>
                     
                     <div class = "col-xs-12 col-sm-6 col-md-4 project">
-                        <a href = "http://codepen.io/makstheimba/full/JRLyVj/">                        
+                        <a href = "http://codepen.io/makstheimba/full/JRLyVj/" target="_blank">                        
                             <img class = "img-responsive" src="assets/images/calc.jpg" />
                             <h3>JavaScript Calculator</h3>
                             <span class = "description">
-                                Calculator with history<br/>JavaScript, Bootstrap
+                                Калькулятор с историей вычислений<br/>JavaScript, Bootstrap
                             </span>
                         </a>                        
                     </div>
@@ -97,11 +124,11 @@
                     <div class="clearfix visible-md-block visible-lg-block"></div>
                     
                     <div class = "col-xs-12 col-sm-6 col-md-4 project">
-                        <a href = "http://codepen.io/makstheimba/full/ZpxzrQ/">                        
+                        <a href = "http://codepen.io/makstheimba/full/ZpxzrQ/" target="_blank">                        
                             <img class = "img-responsive" src="assets/images/wiki.jpg" />
                             <h3>Wiki Viewer</h3>
                             <span class = "description">
-                                Search Wikipedia or browse random page<br/>JavaScript, Wikipedia API
+                                Поиск по википедии<br/>JavaScript, Wikipedia API
                             </span>
                         </a>                        
                     </div>
@@ -109,21 +136,21 @@
                     <div class="clearfix visible-sm-block"></div>
                     
                     <div class = "col-xs-12 col-sm-6 col-md-4 project">
-                        <a href = "http://codepen.io/makstheimba/full/BLJZjq/">                        
+                        <a href = "http://codepen.io/makstheimba/full/BLJZjq/" target="_blank">                        
                             <img class = "img-responsive" src="assets/images/weather.jpg" />
                             <h3>Weather On Globe</h3>
                             <span class = "description">
-                                Click anywhere on a map to get weather from that place<br/>Jquery, Javascript, Google Maps Api
+                                Погода в любой точке мира<br/>Jquery, Javascript, Google Maps Api
                             </span>
                         </a>
                         
                     </div>
                     <div class = "col-xs-12 col-sm-6 col-md-4 project">
-                        <a href = "http://codepen.io/makstheimba/full/qayJYZ/">                        
+                        <a href = "http://codepen.io/makstheimba/full/qayJYZ/" target="_blank">                        
                             <img class = "img-responsive" src="assets/images/tictactoe.jpg" />
                             <h3>Tic Tac Toe</h3>
                             <span class = "description">
-                                Tic Tac Toe with minimax bot<br/>JavaScript, CSS
+                                Крестики&#8209;нолики с минимакс ботом<br/>JavaScript, CSS
                             </span>
                         </a>                        
                     </div>                    
@@ -131,43 +158,27 @@
             </div>
         </div>
         <a name = "contact"></a>
-        <div class = "contact">
-            <div class="container">
-                <h2>Contact me</h2>
-                <div class="row">
-                    <form role="form" id="contact-form" class="contact-form">
-                                <div class="row">
-                                    <div class="col-md-6">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" name="Name" autocomplete="off" id="Name" placeholder="Name">
-                                    </div>
-                                </div>
-                                    <div class="col-md-6">
-                                    <div class="form-group">
-                                        <input type="email" class="form-control" name="email" autocomplete="off" id="email" placeholder="E-mail">
-                                    </div>
-                                </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-12">
-                                    <div class="form-group">
-                                        <textarea class="form-control textarea" rows="3" name="Message" id="Message" placeholder="Message"></textarea>
-                                    </div>
-                                </div>
-                                </div>
-                                <div class="row">
-                                <div class="col-md-12">
-                              <button type="submit" class="btn main-btn pull-right">Send a message</button>
-                              </div>
-                              </div>
-                            </form>
+        <div class = "contact vertical-align">
+            <div class = "container">
+                <div class = "row">
+                    <div class = "col-sm-6 col-sm-offset-3">
+                        <h2>Контакты</h2>                
+                        <i class = "fa fa-2x fa-phone"> 8-908-183-47-48</i>
+                        <br />
+                        <i class = "fa fa-2x fa-envelope email"> makstheimba@yandex.ru</i>
+                        <h2>Ссылки</h2>
+                        <div class = "links">
+                            <a class = "btn btn-default" href = "https://github.com/makstheimba" target="_blank"><i class = "fa fa-3x fa-github"> GitHub</i></a>
+                            <a class = "btn btn-default" href = "http://codepen.io/makstheimba/" target="_blank"><i class = "fa fa-3x fa-codepen"> Codepen</i></a>
+                            <a class = "btn btn-default" href = "https://www.freecodecamp.com/makstheimba" target="_blank"><i class = "fa fa-3x fa-free-code-camp"> FreeCodeCamp</i></a>
+                        </div>
+                    </div>
                 </div>
+                
             </div>
         </div>
-        <footer class = "social">
-            <a href = "https://github.com/makstheimba" target="_blank"><i class = "fa fa-4x fa-github"></i></a>
-            <a href = "http://codepen.io/makstheimba/" target="_blank"><i class = "fa fa-4x fa-codepen"></i></a>
-            <a href = "https://www.freecodecamp.com/makstheimba" target="_blank"><i class = "fa fa-4x fa-free-code-camp"></i></a>            
+        <footer>
+            Максим Куличенко 2016
         </footer>
     </body>
 </html>

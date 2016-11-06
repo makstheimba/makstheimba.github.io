@@ -2,36 +2,52 @@ body {
     margin: 0;
     width: 100%;
     height: 100%;
-    overflow-x: hidden;
-}
-h2, h3 {
     font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
 }
+h1, h2, h3 {
+    
+}
+a:hover {
+    text-decoration: none;
+}
+.vertical-align {
+    display: flex;
+    align-items: center;
+}
+
+/* Intro */
 
 .intro {
     width: 100%;
     height: 100vh;
-    
+    text-align: center;
     justify-content: center;
-    background-color: yellowgreen;
+    background-color: #e1e9f7;
 }
+
+/* About */
 
 .about {
     min-height: 100vh;
-    background-color: aqua;
     padding: 1rem;
     font-size: 18px;
     font-family: "Times new Roman", Georgia, serif;
     text-align: justify;
 }
-
-.vertical-align {
-    display: flex;
-    align-items: center;
+.about h2 {
+    text-align: center;
+}
+.skills {
+    padding-bottom: 1rem;
+}
+.skills div {
+    margin-top: 1rem;
 }
 /* Projects */
+
 .projects {
-    min-height: 100vh;
+    min-height: 100vh;    
+    background-color: #e1e9f7;
 }
 .projects-title {
     text-align: center;
@@ -47,7 +63,7 @@ h2, h3 {
     color: white;
     z-index: 1; /* Filtering image makes text with "z-index: auto" disappear; */
     visibility: hidden;
-    padding: 0 1rem;
+    padding: 0 1.2rem;
 }
 .project .description {
     bottom: 3rem;
@@ -66,33 +82,51 @@ h2, h3 {
 .project:hover span, .project:hover h3{
     visibility: visible;
 }
+
 /* Contact */
+
 .contact {
-    background-color: #eee
-}
-.contact-form {
-    padding: 1rem;
-}
-/* Footer */
-.social {
+    background-color: #eee;
+    padding-bottom: 2rem;
+    min-height: 100vh;
     text-align: center;
-    padding: 1rem 0;
-    background-color: #aaa;
 }
-.social a {
-    padding: 1rem;
-    color: #555;
+.contact h2 {
+    text-align: center;
 }
-.social a:hover {
+.contact .email, .contact .links a {
+    margin-top: 1rem;
+}
+.contact .links a{
+    display: block; /* Every link on a new line */
+}
+.contact .links a:hover {
     color: black;
+    transform: scale(1.05);
+}
+
+/* Footer */
+
+footer {
+    text-align: right;
+    padding: 1rem;
+    background-color: #aaa;
 }
 
 /* Media Queries */
+
 @media (max-width: 767px) {
     .project .description, .project h3 {
         visibility: visible;
     }
     .project img {
         filter: brightness(40%);
+    }
+    .contact {
+        font-size: 12px;
+        text-align: left;
+    }
+    .links a {
+        font-size: 10px;
     }
 }
