@@ -101,7 +101,7 @@ p {
     margin-top: 1rem;
 }
 .contact .links a{
-    display: block; /* Every link on a new line */
+    display: block;
 }
 .contact .links a:hover {
     color: black;

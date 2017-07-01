@@ -2,8 +2,7 @@
 <html>
     <head>
         <title>Maksim Kulichenko</title>
-        <script>console.log("damn, got hacked")</script>
-        <script   src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
         <script src="https://use.fontawesome.com/ca3b5d207e.js"></script>
         <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">-->
         <link rel = "stylesheet" href = "assets/bootstrap.min.css">
@@ -30,7 +29,6 @@
                 </div>
                 <div class = "collapse navbar-collapse" id = "example-navbar-collapse">
                     <ul class = "nav navbar-nav navbar-right">
-                        <li><a href = "#home">В начало</a></li>
                         <li><a href = "#about">Обо мне</a></li>
                         <li><a href = "#portfolio">Проекты</a></li>
                         <li><a href = "#contact">Контакты</a></li>
@@ -40,15 +38,6 @@
         </nav>
         
         <!-- End of navbar -->
-        
-        <a name = "home"></a>
-        <div class = "intro vertical-align ">
-            <div><!-- this div is here so h2 goes on a new line. Otherwise it's displayed inline with h1-->
-                <h1>Куличенко Максим</h1>
-                <h2>Начинающий web&#8209;разработчик</h2>
-            </div>
-        </div>
-        
         <!-- About section -->
         
         <a name = "about"></a>
@@ -57,29 +46,37 @@
                 <div class = "row">
                     <div class = "col-sm-12 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
                         <h2>Обо мне</h2>
-                        <p>Я заканчиваю ДГТУ по специальности "Компьютерная безопасность". Мне нравится программирование и все, что связано с компьютерами. Много писал на Python - проекты для института в ходе обучения, различные задания на сайтах <a href = "https://py.checkio.org/user/makstheimba/">Checkio</a> и <a href = "https://www.codewars.com/users/makstheimba">CodeWars</a>. Хорошо знаю английский язык, без проблем могу читать и говорить на нем. Так же знаком с системой контроля версий <a href = "https://github.com/makstheimba">Git</a>.</p>
-                        <p>Несколько месяцев назад решил посвятить себя изучению веб-разработки. В ходе самообучения наткнулся на сайт <a href = "https://www.freecodecamp.com/makstheimba">FreeCodeCamp</a> и результатом моих интенсивных занятий на нем стали проекты, представленные ниже.</p>
-                        <p>В будущем хотелось бы отточить свои навыки работы с базами данных, изучить Django или Node.js и стать back-end разработчиком.</p>                     
-                        <h2>Навыки</h2>
+                        <p>На данный момент работаю в компании "Точка кипения".
+                            Последний год занимаюсь разработкой комплексных web интерфейсов для кинотеатров и их менеджеров.
+                        </p>
+                        <p>
+                            Все это время использовал React/Redux, SCSS, Webpack, ES6 и много других современных front-end технологий. Умею пользоваться git, без проблем читаю и общаюсь на английском.
+                            Активно практикую ТДД, даже выступал с докладом по поводу тестирования React/Redux на ростовском митапе.
+                            Параллельно с фронтом, в свободное время, знакомлюсь с бэком - имею небольшой опыт взаимодействия с mongodb и node.js.
+                        </p>
+                        <p>
+                            В будущем хочу совершенствовать front-end навыки и немного подтянуть back-end, чтобы иметь представление о функционировании системы в целом.
+                        </p>
+                        <h2>Ключевые навыки</h2>
                         <div class = "row skills">
                             <div class = "col-xs-4 col-sm-2">
                                 <img class = "img-responsive" src = "assets/images/js.png" />
                             </div>
                             <div class = "col-xs-4 col-sm-2">
-                                <img class = "img-responsive" src = "assets/images/html5.png" />
+                                <img class = "img-responsive" src = "assets/images/github.jpg" />
                             </div>
                             <div class = "col-xs-4 col-sm-2">
-                                <img class = "img-responsive" src = "assets/images/css3.png" />
+                                <img class = "img-responsive" src = "assets/images/jest.png" />
                             </div>
                             
                             <div class = "col-xs-4 col-sm-2">
-                                <img class = "img-responsive" src = "assets/images/python.jpg" />
+                                <img class = "img-responsive" src = "assets/images/react.png" />
                             </div>                            
                             <div class = "col-xs-4 col-sm-2">
-                                <img class = "img-responsive" src = "assets/images/jquery.png" />
+                                <img class = "img-responsive" src = "assets/images/redux.png" />
                             </div>
                             <div class = "col-xs-4 col-sm-2">
-                                <img class = "img-responsive" src = "assets/images/bootstrap.png" />
+                                <img class = "img-responsive" src = "assets/images/scss.png" />
                             </div>
                         </div>
                         
@@ -95,74 +92,30 @@
             <div class = "container">
                 <div class = "row projects-title">
                     <div class = "col-xs-12">
-                        <h2>Мои проекты</h2>
+                        <h2>Примеры кода</h2>
                     </div>
                 </div>
                 <div class = "row">                    
-                    <div class = "col-xs-12 col-sm-6 col-md-4 project">
-                        <a href = "http://codepen.io/makstheimba/full/XjxxZV/" target="_blank">                        
-                            <img class = "img-responsive" src="assets/images/pomodoro.jpg" />
-                            <h3>Pomodoro Clock</h3>
+                    <div class = "col-xs-12 col-md-4 col-md-offset-2 project">
+                        <a href = "https://codepen.io/makstheimba/full/zNPREq/" target="_blank">                        
+                            <img class = "img-responsive" src="assets/images/gol.jpg" />
+                            <h3>Game of life</h3>
                             <span class = "description">
-                                Часы с возможностью выставить время работы и отдыха<br/>Jquery, Jquery UI
+                                Клеточный автомат<br/>React
                             </span>
                         </a>
                     </div>
-                    <div class = "col-xs-12 col-sm-6 col-md-4 project">
-                        <a href = "http://codepen.io/makstheimba/full/PGgbVa/" target="_blank">   
-                            <img class = "img-responsive" src="assets/images/twitch.jpg" />
-                            <h3>View Twitch</h3>
-                            <span class = "description">
-                                Поиск стримеров и отображение их статуса<br/>Jquery, Twitch API, CSS
-                            </span>
-                        </a>                        
-                    </div>
-                    
                     <div class="clearfix visible-sm-block"></div>
-                    
-                    <div class = "col-xs-12 col-sm-6 col-md-4 project">
-                        <a href = "http://codepen.io/makstheimba/full/JRLyVj/" target="_blank">                        
-                            <img class = "img-responsive" src="assets/images/calc.jpg" />
-                            <h3>JavaScript Calculator</h3>
+                    <div class = "col-xs-12 col-md-4 project">
+                        <a href = "http://url-ms-1337.herokuapp.com/" target="_blank">   
+                            <img class = "img-responsive" src="assets/images/urlsh.jpg" />
+                            <h3>URL shortener</h3>
                             <span class = "description">
-                                Калькулятор с историей вычислений<br/>JavaScript, Bootstrap
+                                Микросервис для укорачивания url<br/>Node.js, Mongodb
                             </span>
                         </a>                        
                     </div>
                     
-                    <div class="clearfix visible-md-block visible-lg-block"></div>
-                    
-                    <div class = "col-xs-12 col-sm-6 col-md-4 project">
-                        <a href = "http://codepen.io/makstheimba/full/ZpxzrQ/" target="_blank">                        
-                            <img class = "img-responsive" src="assets/images/wiki.jpg" />
-                            <h3>Wiki Viewer</h3>
-                            <span class = "description">
-                                Поиск по википедии<br/>JavaScript, Wikipedia API
-                            </span>
-                        </a>                        
-                    </div>
-                    
-                    <div class="clearfix visible-sm-block"></div>
-                    
-                    <div class = "col-xs-12 col-sm-6 col-md-4 project">
-                        <a href = "http://codepen.io/makstheimba/full/BLJZjq/" target="_blank">                        
-                            <img class = "img-responsive" src="assets/images/weather.jpg" />
-                            <h3>Weather On Globe</h3>
-                            <span class = "description">
-                                Погода в любой точке мира<br/>Jquery, Javascript, Google Maps Api
-                            </span>
-                        </a>
-                        
-                    </div>
-                    <div class = "col-xs-12 col-sm-6 col-md-4 project">
-                        <a href = "http://codepen.io/makstheimba/full/qayJYZ/" target="_blank">                        
-                            <img class = "img-responsive" src="assets/images/tictactoe.jpg" />
-                            <h3>Tic Tac Toe</h3>
-                            <span class = "description">
-                                Крестики&#8209;нолики с минимакс ботом<br/>JavaScript, CSS
-                            </span>
-                        </a>                        
-                    </div>                    
                 </div>
             </div>
         </div>
@@ -186,8 +139,5 @@
                 
             </div>
         </div>
-        <footer>
-            <span>Максим Куличенко 2016</span>
-        </footer>
     </body>
 </html>
